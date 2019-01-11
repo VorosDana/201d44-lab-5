@@ -137,7 +137,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var product = 1;
     for(var i = 0; i < dynamicArray.length; i++)
     {
-        product *= dynamicArray[i];
+        product = multiply(product, dynamicArray[i])[0];
     }
     
     var message = 'The numbers ';
